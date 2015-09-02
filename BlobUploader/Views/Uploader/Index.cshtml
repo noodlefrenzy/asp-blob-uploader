@@ -1,0 +1,8 @@
+﻿<h2>Upload File</h2>
+
+@using (Html.BeginForm("upload", "api", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <label>Image Description:</label> <input type="text" name="ImageDescription" value="Testing" /><br />
+    <label>Image: </label> <input type="file" name="FileUpload1" /><br />
+    <input type="submit" name="Submit" id="Submit" value="Upload" />
+}
